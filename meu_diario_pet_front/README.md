@@ -67,9 +67,11 @@ meu_diario_pet_front/
 │   │   ├── AppHeader.jsx
 │   │   ├── ConfirmModal.jsx
 │   │   ├── FeedbackBanner.jsx
+│   │   ├── IconBadge.jsx
 │   │   ├── LoadingSpinner.jsx
 │   │   ├── PetCard.jsx
 │   │   ├── PrimaryButton.jsx
+│   │   ├── RevealBlock.jsx
 │   │   ├── SearchBar.jsx
 │   │   └── TooltipHint.jsx
 │   ├── data/
@@ -135,7 +137,7 @@ meu_diario_pet_front/
 ### 4) Organizacao e Documentacao (2,0 pts)
 
 - [0,5] Projeto hospedado publicamente no GitHub.
-   - Status: pendente de publicacao publica (inserir link abaixo).
+   - Status: atendido.
 - [0,5] README com titulo, descricao e instalacao.
    - Status: atendido neste arquivo.
 - [0,5] Estrutura clara de pastas e arquivos.
@@ -145,7 +147,25 @@ meu_diario_pet_front/
 
 ### Link do repositorio publico
 
-- GitHub: [ADICIONE_AQUI_O_LINK_DO_REPOSITORIO]
+- GitHub: https://github.com/AnaKaffka/Pos-PUC-front-end-avancado
+
+## Validacao Rapida (2 minutos)
+
+1. Rodar localmente:
+   - `cd meu_diario_pet_front`
+   - `npm install`
+   - `npm run dev`
+2. Conferir rotas:
+   - `/` (Home)
+   - `/pets` (Cadastro + Busca)
+   - `/pets/:petId/diario` (Diario do pet)
+   - `/cuidados` (Guia de cuidados)
+   - URL invalida -> pagina 404
+3. Conferir requisitos-chave:
+   - Componentes reutilizaveis (header, botao, busca, card, feedback, tooltip, modal)
+   - Hooks de navegacao (useNavigate, useParams, useLocation)
+   - Simulacao de servidor via JSON (src/data/mockData.json + src/services/mockApi.js)
+   - Feedback visual, loading, estados vazios e layout responsivo
 
 ## Observacoes
 
